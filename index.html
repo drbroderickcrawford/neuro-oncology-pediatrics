@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Neuro-Oncology Pediatrics | Health Psych × Bioinformatics</title>
+<meta name="description" content="Health-psychology–informed pediatric neuro-oncology hub: UCSD Applied Bioinformatics + diagnostic pathways, surgery, survivorship, Grand Rounds, and curated Atlas resources.">
+<style>
+  :root{--bg:#0b0d10;--card:#13161b;--ink:#e7eef7;--muted:#9aa3af;--accent:#4ea8de}
+  *{box-sizing:border-box} html,body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,Segoe UI,Inter,Roboto,Arial,sans-serif}
+  .wrap{max-width:1120px;margin:0 auto;padding:24px}
+  .nav{position:sticky;top:0;backdrop-filter:blur(8px);background:#0b0d10cc;border-bottom:1px solid #1f2937}
+  .links a{color:#cbd5e1;padding:8px 10px;border-radius:10px;text-decoration:none} .links a:hover{background:#1f2937}
+  .h1{font-size:clamp(28px,4.2vw,42px);font-weight:800;line-height:1.15} .h2{font-size:clamp(20px,3vw,28px);font-weight:700;margin:8px 0}
+  .muted{color:var(--muted)} .btn{display:inline-block;background:var(--accent);color:#061018;padding:10px 14px;border-radius:10px;font-weight:600;text-decoration:none}
+  .btn-outline{border:1px solid #334155;color:#e2e8f0;padding:10px 14px;border-radius:10px;text-decoration:none}
+  .grid{display:grid;gap:16px} .g2{grid-template-columns:repeat(2,minmax(0,1fr))} .g3{grid-template-columns:repeat(3,minmax(0,1fr))} @media(max-width:900px){.g2,.g3{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px dashed #223042;border-radius:14px;padding:18px}
+  .small{font-size:13px} .list{padding-left:18px} .list li{margin:6px 0}
+</style>
+<body>
+  <div class="nav">
+    <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:16px">
+      <strong>Neuro-Oncology Pediatrics</strong>
+      <nav class="links" style="display:flex;gap:6px;flex-wrap:wrap">
+        <a href="#overview">Overview</a><a href="#foundations">UCSD Foundations</a><a href="#diagnostics">Diagnostics</a>
+        <a href="#grandrounds">Grand Rounds</a><a href="#surgery">Surgery & Recovery</a><a href="#psych">Health Psych</a>
+        <a href="#resources">Resources</a>
+      </nav>
+    </div>
+  </div>
+
+  <section id="overview" class="wrap">
+    <div class="h1">Health-Psychology–Informed Bioinformatics for Pediatric Neuro-Oncology</div>
+    <p class="muted">Built on the UCSD Applied Bioinformatics certificate and aligned with expert content from
+      <a href="https://www.neurosurgicalatlas.com/" target="_blank" rel="noreferrer">The Neurosurgical Atlas</a>.
+      Operationalizes diagnostics, surgical pathways, and Grand Rounds complexity through a family-centered lens.</p>
+    <p>
+      <a class="btn" href="#foundations">Explore Foundations</a>
+      <a class="btn-outline" href="#grandrounds">Grand Rounds Explorer</a>
+    </p>
+  </section>
+
+  <section id="foundations" class="wrap">
+    <div class="h2">UCSD Applied Bioinformatics Foundations</div>
+    <div class="grid g3" style="margin-top:10px">
+      <div class="card"><b>Genetics</b> <div class="small muted">BIOL-40338</div><ul class="list small"><li>Mendelian/complex inheritance</li><li>Genetic test interpretation</li><li>Risk communication</li></ul></div>
+      <div class="card"><b>Bioinformatics Fundamentals</b> <div class="small muted">BIOL-40236</div><ul class="list small"><li>UNIX, databases, Python</li><li>NCBI/EBI; BLAST</li><li>Gene prediction</li></ul></div>
+      <div class="card"><b>Genomic Sequencing Tech</b> <div class="small muted">BIOL-40237</div><ul class="list small"><li>Short/long-read; single-cell</li><li>Epigenetics</li><li>Test design</li></ul></div>
+      <div class="card"><b>Processing Actionable Data</b> <div class="small muted">BIOL-40327</div><ul class="list small"><li>QC→map→call→annotate</li><li>Pipeline tuning</li><li>Clinician summaries</li></ul></div>
+      <div class="card"><b>Intro to Statistics (R)</b> <div class="small muted">CSE-41198</div><ul class="list small"><li>Study design</li><li>Hypothesis tests & CI</li><li>Regression models</li></ul></div>
+    </div>
+  </section>
+
+  <section id="diagnostics" class="wrap">
+    <div class="h2">Diagnostic Pathway</div>
+    <div class="grid g3" style="margin-top:10px">
+      <div class="card"><b>Clinical flags</b><div class="small muted">Headache, seizures, neuro deficits</div></div>
+      <div class="card"><b>Imaging</b><div class="small muted">MRI w/ contrast; diffusion; spine if indicated</div></div>
+      <div class="card"><b>Tumor board</b><div class="small muted">Biopsy vs resection vs observe</div></div>
+      <div class="card"><b>Molecular</b><div class="small muted">Panel/exome, methylation, H3K27M, MGMT</div></div>
+      <div class="card"><b>Psychology</b><div class="small muted">SPIKES; caregiver stress screen; sleep plan</div></div>
+    </div>
+  </section>
+
+  <section id="grandrounds" class="wrap">
+    <div class="h2">Grand Rounds Explorer</div>
+    <p class="small muted">Explore live sessions at the <a href="https://www.neurosurgicalatlas.com/grand-rounds" target="_blank" rel="noreferrer">Neurosurgical Atlas — Grand Rounds</a>.</p>
+  </section>
+
+  <section id="surgery" class="wrap">
+    <div class="h2">Surgery & Recovery</div>
+    <div class="grid g2" style="margin-top:10px">
+      <div class="card"><b>OR→ICU Handover Checklist</b><ul class="list small"><li>Procedure summary, drains</li><li>Neuro baseline & ICP</li><li>Pain & delirium bundle</li><li>Family briefing: timing/contacts</li></ul></div>
+      <div class="card"><b>Home Recovery Playbook</b><ul class="list small"><li>Meds calendar</li><li>Sleep hygiene + graded activity</li><li>School accommodations</li><li>Caregiver burnout screen (weekly)</li></ul></div>
+    </div>
+  </section>
+
+  <section id="psych" class="wrap">
+    <div class="h2">Health Psychology Layer</div>
+    <div class="grid g3" style="margin-top:10px">
+      <div class="card"><b>Before Diagnosis</b><ul class="list small"><li>Normalize help-seeking</li><li>Stabilize sleep/meals</li><li>Prep for MRI day</li></ul></div>
+      <div class="card"><b>Disclosure & Decision</b><ul class="list small"><li>SPIKES; values clarification</li><li>Distress thermometer</li><li>Decision aids</li></ul></div>
+      <div class="card"><b>Post-Op & Survivorship</b><ul class="list small"><li>CBT-i; anxiety reduction</li><li>Cognitive rehab micro-goals</li><li>Sibling inclusion; school re-entry</li></ul></div>
+    </div>
+  </section>
+
+  <section id="resources" class="wrap">
+    <div class="h2">Key Resources</div>
+    <div class="grid g3" style="margin-top:10px">
+      <a class="card" href="https://www.ncbi.nlm.nih.gov/" target="_blank" rel="noreferrer"><b>NCBI Entrez</b><div class="small muted">Databases</div></a>
+      <a class="card" href="https://www.ebi.ac.uk/" target="_blank" rel="noreferrer"><b>EMBL-EBI</b><div class="small muted">Databases</div></a>
+      <a class="card" href="https://blast.ncbi.nlm.nih.gov/Blast.cgi" target="_blank" rel="noreferrer"><b>BLAST</b><div class="small muted">Sequence</div></a>
+      <a class="card" href="https://www.neurosurgicalatlas.com/volumes" target="_blank" rel="noreferrer"><b>Atlas — Volumes</b></a>
+      <a class="card" href="https://www.neurosurgicalatlas.com/cases" target="_blank" rel="noreferrer"><b>Atlas — Cases</b></a>
+      <a class="card" href="https://www.neurosurgicalatlas.com/neuroanatomy" target="_blank" rel="noreferrer"><b>Atlas — Neuroanatomy</b></a>
+    </div>
+    <p class="small muted" style="margin-top:12px">© <span id="y"></span> For educational purposes; not medical advice.</p>
+  </section>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
